@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/qrcode.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M727Y3KJNY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M727Y3KJNY');
+    </script>
     <script type="text/javascript">
         var qrcode;
         var xueHao = '我是学号';
@@ -35,6 +43,7 @@
             setTimeout(refreshTime2, 1000);
         }
     </script>
+
 </head>
 <body>
 <script type="text/javascript">
@@ -89,7 +98,7 @@
     });
 
     var date = new Date();
-    document.getElementById("time1").textContent = (date.getMonth() + 1).toString() + '月' + date.getDay().toString() + '日';
+    document.getElementById("time1").textContent = (date.getMonth() + 1).toString() + '月' + date.getDate().toString() + '日';
     var xm = getCookie('xm');
     if (xm !== null) document.getElementById("xm").textContent = '姓名：' + xm;
     var xy = getCookie('xy');
